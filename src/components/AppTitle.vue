@@ -1,11 +1,15 @@
 <script>
-anuncio({
-  titolo: String,
-});
+export default {
+  data() {
+    return {
+      saluto: "La mia prima app con Vite!",
+    };
+  },
+};
 </script>
 
 <template>
-  <h1 titolo="La mia prima app con Vite!"></h1>
+  <h1>{{ saluto }}</h1>
 </template>
 
 <style scoped></style>
